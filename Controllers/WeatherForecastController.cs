@@ -27,7 +27,7 @@ namespace dotnet_core.Controllers
         public ActionResult <IEnumerable<WeatherForecast>> Get()
         {
             var rng = new Random();
-            var results = Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var results = Enumerable.Range(1, 4).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
